@@ -4,4 +4,4 @@ Hi, please follow the following steps to get these scripts to work:
 2. `pip install -r requirements.txt` to install dependencies
 3. You will need to set a few environment variables to access this class' database - you can set these by editing the `creds.sh` file and then doing a `source creds.sh`.
 4. Feel free to change the query and stringify function.
-5. Run `python kafka_consumer.py` before running `python kafka_producer.py` and voila!
+5. Run `python kafka_consumer.py` in a separate terminal before running `python kafka_producer.py` and voila!
