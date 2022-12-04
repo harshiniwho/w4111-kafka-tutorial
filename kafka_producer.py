@@ -31,7 +31,7 @@ try:
     # stream this data to our local kafka instance
     producer = KafkaProducer(bootstrap_servers='localhost:9092')
     for payment in payments:
-        value = producer.send('payments', payment.encode('ascii'))
+        producer.send('payments', payment.encode('ascii'))
     # flushes the producer
     producer.flush()
 finally:
